@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+/* @import url(https://fonts.googleapis.com/css?family=Exo+2:200i); */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --neon-text-color: #00541a;
@@ -18,4 +19,61 @@ body {
   background: #00541a;
   height: 100vh;
   font-family: 'Exo 2', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Modal */
+.modal-container {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  background: var(--neon-border-color);
+  box-shadow: 2px 2px 5px 3px rgba(5, 243, 29, 0.6);
+  width: 33%;
+  height: 80%;
+  border-radius: 10px;
+  animation: modalopen 1s;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.close-button {
+  font-size: 2.2rem;
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.modal-header h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.modal-content li {
+  margin: 15px;
+  font-size: 1.3rem;
+  font-weight: bolder;
 }
