@@ -1,4 +1,5 @@
 const rulesBtn = document.getElementById('rules-button');
+const startGameBtn = document.getElementById('start-game-button');
 const modalContainer = document.querySelector('.modal-container');
 const closeBtn = document.querySelector('.close-button');
 
@@ -10,9 +11,14 @@ function closeModal() {
   modalContainer.classList.add('hidden');
 }
 
+function startGame() {
+  window.location.href = 'game-board.html';
+}
+
 // Event Listeners
 rulesBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal);
+startGameBtn.addEventListener('click', startGame);
 
 // Event listener to escape out of the rules modal
 document.addEventListener('keydown', (e) => {
