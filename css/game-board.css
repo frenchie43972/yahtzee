@@ -10,14 +10,37 @@
   box-shadow: 2px 2px 5px 3px rgba(103, 174, 110, 0.6);
 }
 
+/* Top column layout */
+
 .score-card-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(10, 1fr);
-
   width: 90%;
   height: 80%;
   margin-top: 10px;
   border-radius: 10px;
   border: 1px solid var(--neon-border-color);
+}
+
+.score-column {
+  border: 1px solid var(--neon-border-color);
+  border-top: none;
+  border-left: none;
+  color: var(--neon-border-color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.score-column:last-child {
+  border-right: none;
+}
+
+/* Score Card Rows */
+.row-items {
+  border: 1px solid var(--neon-border-color);
+  display: flex;
+  flex-direction: column;
 }
