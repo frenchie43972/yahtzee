@@ -19,65 +19,74 @@
   <body>
     <!-- Landing Page Section -->
 
-    <div class="landing-container">
-      <div class="landing-header">
-        <h1 id="neon-sign">Yahtzee!</h1>
-      </div>
+    <main class="landing-container">
+      <header>
+        <div class="landing-header">
+          <h1 id="neon-sign">Yahtzee!</h1>
+        </div>
+      </header>
 
-      
-
-        <footer>
-          <div class="footer-container">
-            <button id="rules-button">Rules</button>
-            <button id="start-game-button">Start Game!</button>
-          </div>
-        </footer>
-      </div>
-    </div>
+      <footer>
+        <div class="footer-container">
+          <button class="footer-buttons" id="rules-button">Rules</button>
+          <button class="footer-buttons" id="start-game-button">
+            Start Game!
+          </button>
+        </div>
+      </footer>
+    </main>
 
     <!-- Modal -->
-      <div class="modal-container hidden">
-        <div class="modal">
+    <dialog
+      id="rulesModal"
+      class="modal-container"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="rulesTitle"
+    >
+      <div class="modal">
+        <button class="close-rules" aria-label="Close rules">
           <i class="fa-regular fa-circle-xmark close-button"></i>
-          <div class="modal-header">
-            <h2>How to Play Yahtzee!</h2>
-          </div>
-          <div class="modal-content">
-            <ol>
-              <li>
-                Roll the Dice: At the start of your turn, roll all five dice.
-              </li>
-              <li>
-                Select Dice to Hold: After the first roll, choose which dice to
-                keep (hold) and which to re-roll based on your target scoring
-                category.
-              </li>
-              <li>
-                Re-Roll (Up to 2 More Times): You may roll up to two additional
-                times, adjusting which dice you hold to improve your
-                combination.
-              </li>
-              <li>
-                Choose a Scoring Category: At the end of your turn, pick an
-                available category on your scorecard. Assign your dice result to
-                that category—the category can’t be used again.
-              </li>
-              <li>
-                Record Your Score: Calculate the score for that category using
-                the corresponding rules (such as summing dice for upper-section
-                numbers or specific patterns like full house).
-              </li>
-              <li>
-                Repeat Turns: Continue taking turns until every category on the
-                scorecard has been filled.
-              </li>
-              <li>
-                Determine the Winner: Tally all the scores; the player with the
-                highest total wins the game.
-              </li>
-            </ol>
-          </div>
+        </button>
+        <div class="modal-header">
+          <h2 id="rulesTitle">How to Play Yahtzee!</h2>
         </div>
+        <div class="modal-content">
+          <ol>
+            <li>
+              Roll the Dice: At the start of your turn, roll all five dice.
+            </li>
+            <li>
+              Select Dice to Hold: After the first roll, choose which dice to
+              keep (hold) and which to re-roll based on your target scoring
+              category.
+            </li>
+            <li>
+              Re-Roll (Up to 2 More Times): You may roll up to two additional
+              times, adjusting which dice you hold to improve your combination.
+            </li>
+            <li>
+              Choose a Scoring Category: At the end of your turn, pick an
+              available category on your scorecard. Assign your dice result to
+              that category—the category can’t be used again.
+            </li>
+            <li>
+              Record Your Score: Calculate the score for that category using the
+              corresponding rules (such as summing dice for upper-section
+              numbers or specific patterns like full house).
+            </li>
+            <li>
+              Repeat Turns: Continue taking turns until every category on the
+              scorecard has been filled.
+            </li>
+            <li>
+              Determine the Winner: Tally all the scores; the player with the
+              highest total wins the game.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </dialog>
 
     <script src="./js/landing.js"></script>
   </body>

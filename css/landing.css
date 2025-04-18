@@ -84,7 +84,7 @@ footer {
   justify-content: space-between;
 }
 
-button {
+.footer-buttons {
   cursor: pointer;
   width: 25%;
   height: 50px;
@@ -97,11 +97,11 @@ button {
   font-weight: bold;
 }
 
-button:hover {
+.footer-buttons:hover {
   filter: brightness(125%);
 }
 
-button:active {
+.footer-buttons:active {
   transform: translateY(3px);
   box-shadow: none;
 }
