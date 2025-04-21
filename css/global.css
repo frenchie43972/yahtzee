@@ -26,17 +26,22 @@ body {
 /* Modal */
 .modal-container {
   background: rgba(0, 0, 0, 0.5);
-  /* position: fixed; */
+  padding: 0;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.modal-container: .modal {
+.hidden {
+  display: none;
+}
+
+.modal-container .modal {
   background: var(--neon-border-color);
   box-shadow: 2px 2px 5px 3px rgba(5, 243, 29, 0.6);
   width: 33%;
