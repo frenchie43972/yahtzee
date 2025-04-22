@@ -12,22 +12,18 @@
 
 .landing-header {
   width: 100%;
-  height: 200px;
+  height: 50%;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 #neon-sign {
-  height: 100%;
   font-size: 6rem;
   font-weight: 200;
   font-style: italic;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto 120px;
   color: #90c67c;
-  padding: 2rem 3rem 2.5rem;
   letter-spacing: 1.5rem;
   text-transform: uppercase;
   animation: flicker 1.5s infinite alternate;
@@ -104,4 +100,52 @@ footer {
 .footer-buttons:active {
   transform: translateY(3px);
   box-shadow: none;
+}
+
+@media (max-width: 1000px) {
+  #neon-sign {
+    font-size: 5.5rem;
+    letter-spacing: 1.2rem;
+  }
+}
+
+@media (max-width: 870px) {
+  #neon-sign {
+    font-size: 5rem;
+    letter-spacing: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #neon-sign {
+    font-size: 4.5rem;
+    letter-spacing: 1rem;
+  }
+}
+
+@media (max-width: 680px) {
+  #neon-sign {
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+  }
+}
+
+@media (max-width: 530px) {
+  #neon-sign {
+    font-size: 4rem;
+    letter-spacing: normal;
+  }
+
+  .footer-buttons {
+    width: 40%;
+    height: 35%;
+    align-content: space-evenly;
+  }
+}
+
+@media (max-width: 440px) {
+  #neon-sign {
+    font-size: 3.5rem;
+    letter-spacing: normal;
+  }
 }

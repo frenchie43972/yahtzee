@@ -22,12 +22,3 @@
 .score-card {
   border: 1px solid var(--neon-border-color);
 }
-
-.upper-section,
-.lower-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(9, 1fr);
-  width: 48%;
-  height: 100%;
-}
